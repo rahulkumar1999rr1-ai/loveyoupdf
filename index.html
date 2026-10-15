@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MyPDF offers simple browser-based tools to merge, split, compress, rotate, convert and organize PDF documents.">
+<meta name="theme-color" content="#5b50e8">
+<title>MyPDF — All your PDF tools in one place</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#"><span class="brand-icon">M</span><span>MyPDF</span></a>
+  <nav><a href="#tools">All tools</a><a href="#privacy">Privacy</a><a href="#about">About</a></nav>
+  <a class="header-cta" href="#tools">Use tools <span>↗</span></a>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-pill"><span class="spark">✦</span> YOUR DOCUMENT WORKSPACE</div>
+    <h1>Every PDF task.<br><span>One simple place.</span></h1>
+    <p>Merge, split, compress, convert and organize documents in a clean, easy-to-use workspace.</p>
+    <a class="hero-btn" href="#tools">Explore PDF tools <span>↓</span></a>
+    <div class="hero-note"><span>✓</span> Many tools process files directly in your browser</div>
+    <div class="hero-art" aria-hidden="true"><div class="paper paper-back"></div><div class="paper paper-mid"></div><div class="paper paper-front"><span class="pdf-badge">PDF</span><i></i><i></i><i></i><div class="paper-check">✓</div></div><div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div></div>
+  </section>
+
+  <section class="tools-section" id="tools">
+    <div class="section-top"><div><div class="eyebrow">THE TOOLBOX</div><h2>What would you like to do?</h2><p>Choose a tool, add your files, then download the result.</p></div><div class="search-wrap"><span>⌕</span><input id="searchTools" placeholder="Search tools…" aria-label="Search tools"></div></div>
+    <div class="category-row" id="categories">
+      <button class="category active" data-category="All">All tools</button><button class="category" data-category="Organize">Organize PDF</button><button class="category" data-category="Convert">Convert PDF</button><button class="category" data-category="Optimize">Optimize</button><button class="category" data-category="Image">Image tools</button><button class="category" data-category="Text">Text tools</button>
+    </div>
+    <div class="tools-grid" id="toolsGrid">
+      <button class="tool-card" data-tool="merge" data-category="Organize" data-search="merge combine multiple pdf files"><span class="tool-icon purple">▤</span><span class="tool-title">Merge PDF</span><span class="tool-desc">Combine multiple PDFs into one file.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="split" data-category="Organize" data-search="split extract pages range pdf"><span class="tool-icon blue">⇥</span><span class="tool-title">Split PDF</span><span class="tool-desc">Extract selected pages into a new PDF.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="compress" data-category="Optimize" data-search="compress reduce pdf size smaller"><span class="tool-icon green">⌁</span><span class="tool-title">Compress PDF</span><span class="tool-desc">Reduce file size by optimizing page images.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="rotate" data-category="Organize" data-search="rotate turn pdf pages"><span class="tool-icon orange">⟳</span><span class="tool-title">Rotate PDF</span><span class="tool-desc">Rotate every page by 90°, 180° or 270°.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="jpgpdf" data-category="Convert" data-search="jpg jpeg png images to pdf"><span class="tool-icon pink">▧</span><span class="tool-title">JPG to PDF</span><span class="tool-desc">Turn images into a single PDF document.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="pdfjpg" data-category="Convert" data-search="pdf to jpg png image export"><span class="tool-icon blue">▨</span><span class="tool-title">PDF to JPG</span><span class="tool-desc">Export PDF pages as downloadable images.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="pdftxt" data-category="Text" data-search="pdf to text extract text"><span class="tool-icon purple">T</span><span class="tool-title">PDF to Text</span><span class="tool-desc">Extract selectable text from PDF pages.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="protect" data-category="Organize" data-search="protect pdf password encryption"><span class="tool-icon orange">▣</span><span class="tool-title">Password Protect</span><span class="tool-desc">Create a password-protected ZIP containing your PDF.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="imgcompress" data-category="Image" data-search="compress image jpg png resize"><span class="tool-icon green">◩</span><span class="tool-title">Image Compressor</span><span class="tool-desc">Compress JPG, PNG or WebP images.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="wordpdf" data-category="Convert" data-search="word docx to pdf convert"><span class="tool-icon blue">W</span><span class="tool-title">Word to PDF</span><span class="tool-desc">Convert a DOCX document to a downloadable PDF.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="pdfword" data-category="Convert" data-search="pdf to word docx text export"><span class="tool-icon purple">D</span><span class="tool-title">PDF to Word</span><span class="tool-desc">Export extracted PDF text into a DOCX file.</span><span class="tool-link">Open tool <b>→</b></span></button>
+      <button class="tool-card" data-tool="imagetext" data-category="Image" data-search="image to text OCR scanned photo"><span class="tool-icon pink">OCR</span><span class="tool-title">Image to Text (OCR)</span><span class="tool-desc">Recognize text in images with browser OCR.</span><span class="tool-link">Open tool <b>→</b></span></button>
+    </div>
+    <div class="no-results" id="noResults" hidden>No tools match your search.</div>
+  </section>
+
+  <section class="how-section">
+    <div class="eyebrow">SIMPLE BY DESIGN</div><h2>Three steps. Done.</h2>
+    <div class="how-grid"><article><span>01</span><h3>Choose a tool</h3><p>Select the document task you need from the toolbox.</p></article><article><span>02</span><h3>Add your files</h3><p>Choose documents from your device. Some tools work fully in your browser.</p></article><article><span>03</span><h3>Download the result</h3><p>Process your files and save the result to your device.</p></article></div>
+  </section>
+
+  <section class="privacy-banner" id="privacy"><div class="privacy-mark">✓</div><div><h2>Your files, your control.</h2><p>Most included tools process files in your browser. DOCX conversion and OCR load open-source libraries from a CDN. Files are not uploaded to a MyPDF server by this starter project.</p></div><a href="privacy.html">Read privacy notes →</a></section>
+  <section class="about-section" id="about"><div><div class="eyebrow">ABOUT MYPDF</div><h2>A practical toolkit for everyday documents.</h2></div><p>MyPDF is an independent starter project designed for common document tasks. It is not affiliated with iLovePDF, Adobe or any other PDF service. Results can vary with complex layouts, scanned files and browser capabilities.</p></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-icon">M</span><span>MyPDF</span></a><p>Simple tools for everyday documents.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><small>© <span id="year"></span> MyPDF. Independent project.</small></footer>
+
+<div class="modal-backdrop" id="toolModal" hidden>
+  <section class="tool-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-header"><div><div class="eyebrow">MYPDF TOOL</div><h2 id="modalTitle">Tool name</h2></div><button id="closeModal" class="close-btn" aria-label="Close">×</button></div>
+    <p id="modalDesc" class="modal-desc"></p>
+    <label class="dropzone" id="dropzone"><input id="fileInput" type="file" multiple><span class="upload-symbol">↑</span><b>Choose files from your device</b><small>or click here to browse</small><span id="fileNames" class="file-names">No files selected</span></label>
+    <div id="toolOptions" class="tool-options"></div>
+    <div class="modal-actions"><button id="clearFiles" class="btn-light">Clear files</button><button id="runTool" class="btn-primary">Process files <span>→</span></button></div>
+    <div id="progress" class="progress" hidden><div class="progress-bar"><span id="progressBar"></span></div><p id="progressText">Processing…</p></div>
+    <div id="result" class="result" role="status" hidden></div>
+    <p class="modal-footnote">Do not use this starter for confidential or legally sensitive documents. Keep your original files.</p>
+  </section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="app.js"></script>
+</body></html>
